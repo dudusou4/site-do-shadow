@@ -1,0 +1,40 @@
+body{
+   background-color: rgb(43, 131, 207);
+}
+
+#Navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+background-color: black;
+height: 70px;
+color: white;
+font-size: 25px;
+}
+
+#Navbar img{
+   height: 50px;
+}
+
+#Navbar p{
+   font-size: 40px;
+   color: red;
+}
+
+#Navbar a{
+   text-decoration: none;
+   color: white;
+   padding: 20px 20px 20px 20px;
+}
+
+#Navbar a:hover{
+   color: rgb(63, 146, 179);
+   background-color: rgb(255, 191, 17);
+   border-radius: 10px
+}
+
+#Navbar div{
+   padding: 0 0 35px 0;
+   margin: 0 20px 0 0;
+}
