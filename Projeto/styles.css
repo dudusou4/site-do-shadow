@@ -2,6 +2,14 @@ body{
    background-color: rgb(43, 131, 207);
 }
 
+.creepster-regular {
+   font-family: "Creepster", system-ui;
+   font-weight: 400;
+   font-style: normal;
+ }
+
+/* ------------------- NAVBAR */
+
 #Navbar{
 display: flex;
 justify-content: space-between;
@@ -20,21 +28,169 @@ font-size: 25px;
 #Navbar p{
    font-size: 40px;
    color: red;
+   font-family: "Creepster";
+   padding: 0 0 0 500px;
 }
 
 #Navbar a{
    text-decoration: none;
    color: white;
    padding: 20px 20px 20px 20px;
+   font-family: "Creepster";
 }
 
-#Navbar a:hover{
-   color: rgb(63, 146, 179);
-   background-color: rgb(255, 191, 17);
-   border-radius: 10px
+#Navbar a:hover {
+   color: rgb(255, 255, 255);
+   background-color: rgba(255, 53, 17, 0.856);
+   border-radius: 20px;
+   text-decoration: underline;
 }
 
 #Navbar div{
    padding: 0 0 35px 0;
    margin: 0 20px 0 0;
+
+}
+
+/* ------------------- EVENTOS */
+
+#Flex-Events{
+   display: flex;
+   align-items: center;
+   justify-content: Center;
+   margin-top: 50px;
+   margin-left: 20px;
+   margin-bottom: 20px;
+}
+
+#Events img{
+   width: 30vw;
+   height: 80vh;
+}
+
+#Events{
+   
+   width: 30vw;
+   height: 80vh;
+   background-color: #696969;
+   border:solid 2px red;
+}
+
+
+#background-bay{
+   background-color: black;
+   width: 100%;
+   height: 400px;
+   
+
+}
+
+#Bay{
+   display: flex;
+   color: white;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+}
+
+#Ingressos{
+
+   background-color: red;
+   color: white;
+   border: 0px;
+   width: 250px;
+   height: 50px;
+   border-radius: 5px;
+   font-size: 18px;
+   margin-top: 20px;
+}
+
+#Confirmar{
+   background-color: red;
+   color: white;
+   border: 0px;
+   width: 250px;
+   height: 35px;
+   margin-top: 20px;
+   margin-left: -3px;
+   font-size: 18px;
+}
+
+#email{
+   width:250px;
+   height: 30px;
+   font-size: 18px;
+
+}
+
+#submit{
+   font-size: 18px;
+   flex-direction: row;
+}
+
+#background-bay h1{
+margin: 15px;
+   
+
+}
+
+#carrosel{
+display: flex;
+box-shadow: 2px 2px 4px black;
+overflow: hidden;
+width: 700px;
+height: 300px;
+
+
+}
+
+#Containe_img{
+   display: flex;
+   transition: transform 0.43s ease-in-out;
+   transform: translateX(0);
+}
+
+#Containe_img img{
+   width: 700px;
+   height: 300px;
+}
+
+#upper{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 150px;
+}
+
+/* ------------------- CONTAGEM */
+
+#contador{
+   color: white;
+}
+
+
+
+/* ------------------- Comprar Ingresso */
+
+.janela{
+   width: 100vw;
+   height: 100vh;
+   position: relative;
+   top: 0;
+   left: 0;
+   background-color: #696969;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 999;
+}
+
+.cadastro{
+
+   width: 60%;
+   min-width: 450px;
+   min-height: 200px;
+   background-color: rgba(90, 37, 37, 0.541);
+   backdrop-filter: blur(10px);
 }
