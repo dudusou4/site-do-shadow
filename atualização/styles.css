@@ -1,0 +1,318 @@
+body{
+   background-color: rgb(43, 131, 207);
+}
+
+.creepster-regular {
+   font-family: "Creepster", system-ui;
+   font-weight: 400;
+   font-style: normal;
+ }
+
+/* ------------------- NAVBAR */
+
+#Navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+background-color: black;
+height: 70px;
+color: white;
+font-size: 25px;
+}
+
+#Navbar img{
+   height: 50px;
+}
+
+#Navbar p{
+   font-size: 40px;
+   color: red;
+   font-family: "Creepster";
+   padding: 0 0 0 500px;
+}
+
+#Navbar a{
+   text-decoration: none;
+   color: white;
+   padding: 20px 20px 20px 20px;
+   font-family: "Creepster";
+}
+
+#Navbar a:hover {
+   color: rgb(255, 255, 255);
+   background-color: rgba(255, 53, 17, 0.856);
+   border-radius: 20px;
+   text-decoration: underline;
+}
+
+#Navbar div{
+   padding: 0 0 35px 0;
+   margin: 0 20px 0 0;
+
+}
+
+/* ------------------- EVENTOS */
+
+#Flex-Events{
+   display: flex;
+   align-items: center;
+   justify-content: Center;
+   margin-top: 50px;
+   margin-left: 20px;
+   margin-bottom: 20px;
+}
+
+#Events img{
+   width: 30vw;
+   height: 80vh;
+}
+
+#Events{
+   
+   width: 30vw;
+   height: 80vh;
+   background-color: #696969;
+   border:solid 2px red;
+}
+
+
+#background-bay{
+   background-color: black;
+   width: 100%;
+   height: 400px;
+   
+
+}
+
+#Bay{
+   display: flex;
+   color: white;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+}
+
+#Ingressos{
+
+   background-color: red;
+   color: white;
+   border: 0px;
+   width: 250px;
+   height: 50px;
+   border-radius: 5px;
+   font-size: 18px;
+   margin-top: 20px;
+   cursor: pointer;
+}
+
+#Confirmar{
+   background-color: red;
+   color: white;
+   border: 0px;
+   width: 250px;
+   height: 35px;
+   margin-top: 20px;
+   margin-left: -3px;
+   font-size: 18px;
+   cursor: pointer;
+}
+
+#email{
+   width:250px;
+   height: 30px;
+   font-size: 18px;
+
+}
+
+.corretor1{
+   animation: abrirjanelas 0.5s;
+}
+
+#submit{
+   font-size: 18px;
+}
+
+#background-bay h1{
+margin: 15px;
+}
+
+#texto{
+   margin-left: 30px;
+   margin-top: 10px;
+   text-align: center;
+   font-size: 50px;
+   color: rgb(255, 255, 255);
+   font-family: "Creepster";
+
+}
+
+#carrosel{
+display: flex;
+box-shadow: 2px 2px 4px black;
+overflow: hidden;
+width: 1400px;
+height: 400px;
+
+
+}
+
+#Containe_img{
+   display: flex;
+   transition: transform 0.43s ease-in-out;
+   transform: translateX(0);
+}
+
+#Containe_img img{
+   width: 1400px;
+   height:400px;
+}
+
+#upper{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 50px;
+}
+ 
+/* ------------------- CONTAGEM */
+#sla{
+   color: white;
+   font-size: 200px;
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Creepster';
+   margin-top: 300px;
+}
+
+#contador{
+   color: white;
+   font-size: 200px;
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+   align-items: center;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   font-family: 'Creepster';
+}
+
+
+
+/* ------------------- Comprar Ingresso */
+
+.marginbotao{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+#Comprar{
+   background-color: red;
+   color: white;
+   border: 0px;
+   width: 500px;
+   height: 100px;
+   border-radius: 10px;
+   font-size: 36px;
+   margin-top: 100px;
+   margin-bottom: 250px;
+   cursor: pointer;
+   font-family: 'Creepster';
+
+
+}
+
+#Comprar.remover{
+   display: none;
+}
+
+.janela{
+   position: relative;
+   display: none;
+   justify-content: center;
+   align-items: center;
+}
+
+.cadastro{
+
+   width: 43%;
+   height: 350px;
+   background-color: rgba(0, 0, 0, 0.541);
+   backdrop-filter: blur(10px);
+   border-radius: 20px;
+   margin-bottom: 100px;
+
+
+   
+}
+.dados{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+   padding: 30px;
+
+}
+
+.O{
+   margin-left: 775px;
+   text-align: center;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   border: 0;
+   background-color: red;
+   color:white;
+   font-size: 10px;
+}
+
+#cadastroconfirmar{
+   margin-right: 100px;
+}
+
+.janela.abrir{
+   display: flex;
+   animation: abrirjanelas 0.5s;
+}
+
+@keyframes abrirjanelas{
+   from{
+      opacity: 0;
+      transform: translate3d(0, -20px,-5px);
+   }
+   to{
+      opacity: 1;
+      transform: translate3d(0,0,0);
+   }
+
+}
+
+.cadastro3{
+   background-color: red;
+   color: rgb(255, 255, 255);
+   border: 0px;
+   border-radius: 5px;
+   font-size: 18px;
+   height: 30px;
+   width: 300px;
+   cursor: pointer;
+}
+
+#cadastroconfirmar{
+   background-color: red;
+   color: rgb(0, 0, 0);
+   border: 0px;
+   border-radius: 5px;
+   font-size: 18px;
+   cursor: pointer;
+   margin-top: 10px;
+   margin-left: 600px;
+   height: 50px;
+   width: 200px;
+}
+
+
