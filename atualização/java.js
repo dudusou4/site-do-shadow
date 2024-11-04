@@ -116,15 +116,21 @@ let idx = 0
 
 function carrosel(){
     idx++
+    const tela = window.innerWidth
 
     if(idx > img.length - 1){
         idx = 0
     }
 
-    imgs.style.transform = `translateX(${-idx * 1400}px)`
+        if (tela > 700){
+            imgs.style.transform = `translateX(${-idx * 1400}px)`
+        }
+        else{
+            imgs.style.transform = `translateX(${-idx * 700}px)`
+        }
 }
 
-setInterval(carrosel, 1800)
+setInterval(carrosel,1800)
 
 
 
